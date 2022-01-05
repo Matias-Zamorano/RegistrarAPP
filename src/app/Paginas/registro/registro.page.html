@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Iniciar Sesion</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input type="text" [(ngModel)]="user.usuario"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Contraseña</ion-label> <!-- (click)="ingresar()" SE VERA LA CONTRASEÑA cuando se instale angular ya que naturalmente no se ve se tiene que instalar npm install -g @angular/cli -->
+      <ion-input type="password"[(ngModel)]="user.password"></ion-input>
+    </ion-item>
+
+  </ion-card-content>
+</ion-card>
+<hr>
+<ion-row>
+  <ion-col><ion-button color="warning" expand="block" (click)="ingresar()" >ingresar </ion-button></ion-col> <!--al ser un metodo el boton ingresar debe ir con parentesis adelante -->
+</ion-row>
+
+</ion-content>

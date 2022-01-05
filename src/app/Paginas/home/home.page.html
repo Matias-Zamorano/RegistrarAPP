@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Skeleton App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="full">Bienvenido</ion-title>
+    </ion-toolbar>
+    <ion-toolbar>
+      <ion-title size="small"> :{{data.usuario}} </ion-title>
+    </ion-toolbar>
+
+  </ion-header>
+
+  <hr>
+  <ion-item lines="full">
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Apellido</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item> 
+
+  <ion-item lines="full">
+    <ion-label position="floating">Nivel Educacional</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item> 
+
+  <ion-item lines="full">
+    <ion-label position="staked">Fecha nacimiento</ion-label>
+    <ion-input type="date"></ion-input>
+  </ion-item> 
+
+  
+</ion-content>
